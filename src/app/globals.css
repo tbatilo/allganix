@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling and base resets */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAFAF6;
+  color: #2C2C2C;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Utility: display font shorthand */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Decorative leaf divider used between sections */
+.leaf-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.leaf-divider::before,
+.leaf-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #5A8A1F;
+  opacity: 0.3;
+}
