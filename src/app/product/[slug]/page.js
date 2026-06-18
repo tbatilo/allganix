@@ -46,7 +46,6 @@ export default function ProductPage({ params }) {
             src={product.image}
             alt={name}
             className="w-full h-full object-cover"
-            onError={(e) => { e.target.style.display = 'none'; e.target.parentNode.style.backgroundColor = placeholderColor; }}
           />
           {badge && (
             <span className="absolute bottom-4 left-4 bg-white/90 text-brand-green text-sm font-semibold px-4 py-1.5 rounded-full">
